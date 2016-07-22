@@ -64,9 +64,13 @@
 			background-color: #000;
 			padding: 1em 1.5em;
 		}
+		a:visited {
+			color: #ffb509;
+		}
 		a:hover {
 			/*color: #126a8c;*/
 		}
+			
 		h1 {
 			padding: 1em;
 			margin: 0;
