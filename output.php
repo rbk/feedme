@@ -38,48 +38,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>FeedMe</title>
-	<style>
-		body {
-			background-color: #000;
-			color: #fff;
-			margin: 0;
-			padding: 0;
-		}
-		ul {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
-		a {
-			text-decoration: none;
-			font-family: Tahoma, Geneva, sans-serif;
-			line-height: 1.5;
-			-webkit-transition: all .2s;
-			transition: all .2s;
-
-			font-size: 24px;
-			color: #09bbff;
-			display: block;
-			background-color: #000;
-			padding: 1em 1.5em;
-		}
-		a:visited {
-			color: #ffb509;
-		}
-		a:hover {
-			/*color: #126a8c;*/
-		}
-			
-		h1 {
-			padding: 1em;
-			margin: 0;
-			font-size: 36px;
-			text-align: center;
-			background-color: #060606;
-			font-family: sans-serif;
-		}
-	</style>
+	<title>Feed</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <?php 
@@ -92,5 +52,14 @@ listFeed( $tc, 'TechCrunch' );
 listFeed( $grs, 'GuRuStu' );
 
  ?>
+ <script>
+ setTimeout(function(){
+ 	location.reload();
+ }, 1200000);
+ </script>
+
+ <div style="text-align:center;">
+ 	Last load: <script>document.write('Reloaded at ' + new Date() );</script>
+ </div>
 </body>
 </html>
